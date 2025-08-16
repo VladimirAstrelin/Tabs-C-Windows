@@ -1,0 +1,265 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Этот блок содержит символы, которые Visual Studio не должен менять.
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h" // Этот заголовочный файл содержит определения для стандартных ресурсов Windows.
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+// Этот блок содержит ресурсы для русского языка, если они определены.
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+
+// Этот блок содержит техническую информацию для редактора ресурсов.
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+// Этот блок содержит ресурсы для английского языка, который используется в данном проекте.
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+// Главное диалоговое окно.
+IDD_DIALOG1 DIALOGEX 0, 0, 515, 295
+// Стили окна:
+// DS_SETFONT: Использовать шрифт, указанный ниже.
+// DS_FIXEDSYS: Использовать системный шрифт.
+// WS_MINIMIZEBOX: Кнопка "Свернуть".
+// WS_MAXIMIZEBOX: Кнопка "Развернуть".
+// WS_POPUP: Окно является всплывающим (в данном случае - основным).
+// WS_CAPTION: Есть заголовок.
+// WS_SYSMENU: Есть системное меню (значок в левом верхнем углу).
+// WS_THICKFRAME: Окно можно изменять по размеру.
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+// Расширенные стили:
+// WS_EX_OVERLAPPEDWINDOW: Стандартные расширенные стили для окна.
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+CAPTION "TABS" // Текст в заголовке окна.
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,274,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,268,274,50,14
+    // Элемент управления Tab Control.
+    // CONTROL ""...: Определяет элемент управления.
+    // IDC_TAB1: ID элемента.
+    // "SysTabControl32": Имя класса окна для Tab Control.
+    // Стили Tab Control:
+    // WS_CLIPSIBLINGS: Этот стиль не дает окну-Tab Control рисовать внутри области, занятой его "братьями" (в данном случае - кнопками OK/Cancel).
+    //                 Этот стиль важен для предотвращения проблем с отрисовкой.
+    // WS_TABSTOP: Позволяет переключаться на этот элемент с помощью клавиши Tab.
+    CONTROL         "",IDC_TAB1,"SysTabControl32",WS_CLIPSIBLINGS | WS_TABSTOP,24,22,278,175
+END
+
+// Ниже описаны дочерние диалоги-страницы для каждой вкладки.
+// STYLE ... WS_CHILD | WS_VISIBLE: Ключевые стили, которые определяют, что это дочернее окно,
+//                 и что оно должно быть видимым при создании.
+IDD_TAB1 DIALOGEX 50, 50, 167, 86
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This is Tab 1",IDC_STATIC,28,29,109,15 // Элемент "Static Text" на вкладке 1.
+    PUSHBUTTON      "Button 1",IDC_BUTTON1,20,54,50,14 // Кнопка на вкладке 1.
+END
+
+IDD_TAB2 DIALOGEX 50, 50, 151, 83
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This is Tab 2",IDC_STATIC,14,16,76,15
+    EDITTEXT        IDC_EDIT1,15,34,79,13,ES_AUTOHSCROLL
+END
+
+IDD_TAB3 DIALOGEX 0, 0, 117, 67
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This is Tab 3",IDC_STATIC,17,24,78,16
+END
+
+IDD_TAB4 DIALOGEX 0, 0, 129, 71
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This is Tab 4",IDC_STATIC,22,28,86,16
+END
+
+IDD_TAB5 DIALOGEX 0, 0, 125, 76
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This is Tab 5",IDC_STATIC,21,24,59,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+// Этот блок содержит информацию о расположении элементов для редактора ресурсов. Он не влияет на работу программы.
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 508
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_TAB1, DIALOG
+    BEGIN
+        LEFTMARGIN, 20
+        RIGHTMARGIN, 160
+        TOPMARGIN, 19
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_TAB2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_TAB3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_TAB4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_TAB5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+// Используется для поддержки макетов диалогов в MFC, в данном случае неактуален.
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB5 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+// Этот блок определяет структуру меню, которое связано с главным диалогом.
+IDR_MENU1 MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New", ID_FILE_NEW
+        MENUITEM "Open", ID_FILE_OPEN40009
+        MENUITEM SEPARATOR
+        MENUITEM "Quit", ID_FILE_QUIT
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "Help", ID_ABOT_HELP
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
